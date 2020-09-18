@@ -4,35 +4,34 @@
   font-style: normal;
   src: url('fonts/Airstream-webfont.eot');
   src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Airstream-webfont.woff') format('woff'),
-    url('fonts/Airstream-webfont.ttf') format('truetype'),
-    url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+       url('fonts/Airstream-webfont.woff') format('woff'),
+       url('fonts/Airstream-webfont.ttf') format('truetype'),
+       url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
 }
 
 @font-face {
   font-family: 'lakeshore';
   src: url('fonts/LAKESHOR-webfont.eot');
   src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/LAKESHOR-webfont.woff') format('woff'),
-    url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
-    url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+       url('fonts/LAKESHOR-webfont.woff') format('woff'),
+       url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+       url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-html,
-body {
+html,body {
   height: 100%;
 }
 
 body {
-  background: rgb(149, 194, 215);
+  background: rgb(149,194,215);
   display: flex;
   flex-direction: column;
   font-size: 15px;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
@@ -48,7 +47,7 @@ a {
   text-transform: uppercase;
 }
 
-.main-content {
+.main-content{
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -67,8 +66,8 @@ a {
 }
 
 .thumbnail-item {
-  border: 1px solid rgb(100%, 100%, 100%);
-  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  border: 1px solid rgb(100%,100%,100%);
+  border: 1px solid rgba(100%,100%,100%,0.8);
   display: inline-block;
   min-width: 120px;
   max-width: 120px;
@@ -77,7 +76,7 @@ a {
 }
 
 .thumbnail-item:hover {
-  transform: scale(2, 2);
+  transform: scale(2,2);
 }
 
 .thumbnail-title {
@@ -90,18 +89,18 @@ a {
 
 }
 
-.detail-image-container {
+.detail-image-container{
   align-items: center;
   display: flex;
   flex: 1 1 auto;
   justify-content: center;
 }
 
-.detail-image-frame {
+.detail-image-frame{
   position: relative;
   text-align: center;
 
-  transition: transform 333ms cubic-bezier(.17, .67, .83, .67);
+  transition: transform 333ms cubic-bezier(.17,.67,.83,.67);
 }
 
 .is-tiny {
@@ -113,8 +112,8 @@ a {
   width: 90%
 }
 
-.detail-image-title {
-  position: absolute;
+.detail-image-title{
+  position:  absolute;
   bottom: -16px;
   left: 4px;
 
@@ -124,31 +123,26 @@ a {
   font-size: 50px;
 }
 
-.prevButton,
-.nextButton {
-  position: absolute;
+.prevButton, .nextButton {
+  position:absolute;
   top: 50%;
   width: auto;
   padding: 15px;
   margin-top: -20px;
-  background: rgb(149, 194, 215);
+  background: rgb(149,194,215);
   font-size: 15px;
 }
-
-.nextButton {
+.nextButton{
   right: 0;
   margin-right: 20px;
   border-radius: 3px 0 0 3px;
 }
-
-.prevButton {
+.prevButton{
   left: 0;
   margin-left: 20px;
   border-radius: 3px 0 0 3px;
 }
-
-.prevButton:hover,
-.nextButton:hover {
+.prevButton:hover, .nextButton:hover{
   background: rgb(202, 238, 255);
 
 }
@@ -166,7 +160,7 @@ a {
   max-width: 80%;
 }
 
-.hidden-detail .detail-image-container {
+.hidden-detail .detail-image-container{
   display: none;
 }
 
@@ -185,7 +179,7 @@ a {
     overflow: hidden;
   }
 
-  .thumbnail-list {
+  .thumbnail-list{
     flex-direction: column;
     margin-left: 20px;
     order: 0;
@@ -193,11 +187,11 @@ a {
     padding: 0 35px;
   }
 
-  .thumbnail-item {
+  .thumbnail-item{
     max-width: 260px;
   }
 
-  .thumbnail-item+.thumbnail-item {
+  .thumbnail-item + .thumbnail-item {
     margin-top: 20px;
   }
 }
